@@ -1,0 +1,104 @@
+
+#new-history-section {
+
+    .header {
+        color: #FFF;
+        text-align: center;
+        text-shadow: 0px 7px 4px 0px rgba(0, 0, 0, 0.55);
+        font-family: Poppins;
+        font-size: 100px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 6.5px;
+        text-transform: uppercase;
+        padding-top: 50px;
+
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 31px;
+    }
+
+    .date-picker-wrapper {
+        display: flex;
+        height: 640px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+        gap: 13px;
+    }
+
+    .scroll-outer {
+        overflow: hidden;
+        width: 250px;
+    }
+
+    .scroll-inner {
+        height: 700px;
+    }
+
+    .selected-date {
+        text-align: right;
+        font-family: Poppins;
+        font-size: 94.762px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 111.05px; /* 117.188% */
+        letter-spacing: 6.16px;
+        text-transform: uppercase;
+        animation: grow .5s ease-in-out;
+    }
+
+    @keyframes grow {
+        0% { 
+            font-size: 63.646px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 74.586px; /* 117.188% */
+            letter-spacing: 4.137px;
+        }
+        100% { 
+            font-size: 94.762px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 111.05px; /* 117.188% */
+            letter-spacing: 6.16px;
+        }
+    }
+
+    .upcoming-date {
+        text-align: right;
+        font-family: Poppins;
+        font-size: 63.646px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 74.586px; /* 117.188% */
+        letter-spacing: 4.137px;
+        text-transform: uppercase;
+    }
+
+    .content-wrapper {
+        width: 601px;
+        color: #FFF;
+        font-family: Lato;
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 40px;
+    }
+
+    .selected-content {
+        text-align: left;
+    }
+
+    .content-image-wrapper {
+        width: 601px;
+        height: 400px;
+        flex-shrink: 0;
+        overflow: hidden;
+    }
+}

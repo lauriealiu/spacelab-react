@@ -1,7 +1,58 @@
+import jan2021 from "../../assets/aboutAssets/jan2021.jpeg"
+import image2 from "../../assets/homeAssets/image2.jpg"
+import aug2021 from  "../../assets/aboutAssets/aug2021.png"
+import may2023 from "../../assets/aboutAssets/may2023.png"
+
 /**
  * Array of Dates and descriptions for Spacelab History timeline
  * @type {string[][]}
  */
+
+export const newAboutHistoryArray = [
+    [
+        "Jan", 
+        "2021",
+        jan2021,
+        "Data Scientist Matt Paterson meets Dr. Andrew Vanderburg " +
+        "and Dr. Jessie Christiansen of CalTech to " + 
+        "publish a paper on machine learning and exoplanets. " +
+        "They connect him with former classmates Ollie " +
+        "Jackson and Jon Zivku to create SpaceLab: a web " +
+        "application for space exploration."
+    ],
+    [
+        "Jan", 
+        "2021",
+        image2,
+        "SpaceLab meets with aspiring UX Designers to create " + 
+        "a website for exoplanet discovery. Realizing the lack of " + 
+        "cross-functional collaboration experience for early " +
+        "tech professionals, they decide to become a non-profit " + 
+        "organization aiming to provide experiences for women, " +
+        "people of color, and members of the LGBTQ+ " + 
+        "community."
+    ],
+    [
+        "Aug", 
+        "2021",
+        aug2021,
+        "After building a team of front-end developers, SpaceLab launches its website, announcing its purpose and " +
+            "mission to the world. While SpaceLab is working on becoming a nonprofit organization, the organization is " +
+            "created upon a foundation of diversity and inclusion with the help of Meghan Slan, Director of DEIB. " +
+            "SpaceLab is currently working with roughly 25 cross-functional members to build its first project, " +
+            "Exoplanetarium, of which users will have the opportunity to explore exoplanets in our milky way system.",
+    ],
+    [
+        "May", 
+        "2023",
+        may2023,
+        "Exoplanetarium is launched as SpaceLab's pilot project! " +
+            "OTHER INTERESTING FACTS HERE. " +
+            "ALSO HERE." ,
+    ]
+];
+
+
 export const aboutHistoryArray = [
 	[
 		"SPACELAB 2021.01.27",
