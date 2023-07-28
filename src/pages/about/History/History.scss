@@ -81,6 +81,19 @@
         text-transform: uppercase;
     }
 
+    .animate-scroll-down {
+        animation: scrollDown 5s infinite;
+    }
+
+    @keyframes scrollDown {
+        0% {
+            transform: translateY(0%);
+        }
+        100% {
+            transform: translateY(-100%);
+        }
+    }
+
     .content-wrapper {
         width: 601px;
         color: #FFF;

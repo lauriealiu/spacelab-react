@@ -7,11 +7,16 @@ import './History.scss';
 export default function History() {
     const [itemIndex, setItemIndex] = useState(0)
     const [historyItem, setHistoryItem] = useState(newAboutHistoryArray[itemIndex])
+    const [showClass, setShowClass] = useState(false);
 
     useEffect(() => {setHistoryItem(newAboutHistoryArray[itemIndex])}, [itemIndex])
 
     function scrollDown() {
-        console.log('scroll down')
+        setShowClass(true);
+        console.log(showClass)
+        setTimeout(() => {
+            setShowClass(false);
+          }, 1000)
     }
 
     function scrollUp() {
@@ -48,7 +53,10 @@ export default function History() {
 
                     <div className="scroll-outer">
 
-                        <div className="scroll-inner">
+                        <div className={
+                            showClass ? "animate-scroll-down scroll-inner" : "scroll-inner"
+                            }
+                        >
 
                             {newAboutHistoryArray.map((item, i) => {
                                 return (
@@ -66,30 +74,7 @@ export default function History() {
 
                         </div>
 
-                    </div>
-                    
-                        {/* <div className="selected-date">
-                            <div>{historyItem[0]}</div>
-                            <div>{historyItem[1]}</div>
-                        </div>
-
-                        <div className="upcoming-date">
-                            <div>
-                                {itemIndex < newAboutHistoryArray.length - 1 ? newAboutHistoryArray[itemIndex + 1][0] : <></>}
-                            </div>
-                            <div>
-                                {itemIndex < newAboutHistoryArray.length - 1 ? newAboutHistoryArray[itemIndex + 1][1] : <></>}
-                            </div>
-                        </div>
-                        <div className="upcoming-date">
-                            <div>
-                                {itemIndex < newAboutHistoryArray.length - 2 ? newAboutHistoryArray[itemIndex + 2][0] : <></>}
-                            </div>
-                            <div>
-                                {itemIndex < newAboutHistoryArray.length - 2 ? newAboutHistoryArray[itemIndex + 2][1] : <></>}
-                            </div>
-                        </div> */}
-                        
+                    </div>  
                         
                     <img src={polygon2} onClick={handleCarouselDown}></img>
                 </div>
